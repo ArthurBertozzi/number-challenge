@@ -40,7 +40,7 @@ function App() {
     }));
   }
 
-  const resetButton = (title) => {
+  const ResetButton = ({title}) => {
     return (
       <button onClick={cleanEverything}>
         {title}
@@ -110,7 +110,7 @@ function App() {
       <br />
       <br />
 
-      {resetButton('Reset')}
+      <ResetButton title='Reset'/>
 
       {!isOrdered && (<h3>Game Over</h3>)}
 
